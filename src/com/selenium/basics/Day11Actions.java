@@ -1,16 +1,15 @@
 package com.selenium.basics;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.By;                      //click
+import org.openqa.selenium.WebDriver;               //mouse.moveToElement(testleaf).build().perform();
+import org.openqa.selenium.WebElement;              //mouse.doubleClick(webelement).build().perform();
+import org.openqa.selenium.chrome.ChromeDriver;     //mouse.contextClick(webelement).build().perform();
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 
 public class Day11Actions {
 	public static void main(String[] args) throws InterruptedException {
 		
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver1\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -21,14 +20,18 @@ public class Day11Actions {
 		
 		WebElement testleaf = driver.findElement(By.xpath("//a[@class='nav-a  ']"));
 		
-		Actions mouse = new Actions(driver);          //syntax
-		 
+		Actions mouse = new Actions(driver);                                           //syntax
+		
+		
+		Thread.sleep(2000);//move to element
 		mouse.moveToElement(testleaf).build().perform();
 		
-		///WebElement dd = driver.findElement(By.xpath("//a[text()='WebServices']"));
-		//dd.click();
 		
-		//mouse.doubleClick(dd).build().perform();
+		Thread.sleep(2000); //double click
+		WebElement dd = driver.findElement(By.xpath("//a[text()='WebServices']"));
+		dd.click();
+		
+		mouse.doubleClick(dd).build().perform();
 		
 	
 		

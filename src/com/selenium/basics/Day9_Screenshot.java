@@ -1,8 +1,7 @@
 package com.selenium.basics;
 
-import java.io.File;
+import java.io.File; 
 import java.io.IOException;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -14,9 +13,7 @@ public class Day9_Screenshot {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver\\chromedriver.exe");
-		
 		WebDriver driver = new ChromeDriver();
-		
 		driver.get("https://www.youtube.com/channel/UCPIU0ltVBYShTkiW3jTjhCg");
 		driver.manage().window().maximize();
 		
@@ -34,6 +31,8 @@ public class Day9_Screenshot {
 		File s = ts.getScreenshotAs(OutputType.FILE);
 		File t = new File("C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Screenshot\\dh1.png");
 		FileUtils.copyFile(s, t);
+		
+		driver.close();
 		
 	}
 

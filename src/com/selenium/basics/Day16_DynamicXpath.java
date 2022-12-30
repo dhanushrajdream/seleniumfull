@@ -27,10 +27,7 @@ public class Day16_DynamicXpath {
 		 
 		 Thread.sleep(2000);
 		 
-		 
 		 WebElement sen = driver.findElement(By.xpath("//div[@id='draggable']"));
-		 
-		 
 		 WebElement tar = driver.findElement(By.id("droppable"));
 		 
 		 Actions ac =new Actions(driver);

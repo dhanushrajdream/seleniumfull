@@ -1,6 +1,6 @@
 package com.selenium.basics;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.By; 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,6 @@ public class Day10Javascriptexecuter {
 	public static void main(String[] args) throws InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver1\\chromedriver.exe");
-		
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.amazon.in/");
@@ -42,6 +41,10 @@ public class Day10Javascriptexecuter {
 		
 		
 	
+		
+		
+		
+		
 		
 		Thread.sleep(10000);
 		driver.close();

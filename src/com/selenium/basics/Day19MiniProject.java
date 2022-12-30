@@ -12,7 +12,7 @@ public class Day19MiniProject {
 	
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver1\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -21,6 +21,7 @@ public class Day19MiniProject {
 		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
+		//login page
 		WebElement usernamefind = driver.findElement(By.id("username"));                     //username typing
         usernamefind.sendKeys("dhanush5");
         
@@ -30,7 +31,9 @@ public class Day19MiniProject {
         Thread.sleep(5000);
         WebElement login = driver.findElement(By.id("login"));                               //login button
         login.click();
-	
+        
+        
+	    //page one
         Thread.sleep(3000);
         WebElement location = driver.findElement(By.name("location"));                      // location
         Select s = new Select(location); 

@@ -1,16 +1,17 @@
 package com.selenium.basics;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.By; 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+//1.driver.switchTo().alert().accept(); 2.,driver.switchTo().alert().dismiss(); 3.,String text = driver.switchTo().alert().getText();
+//4.driver.switchTo().alert().sendKeys("box program");
 public class Day7_Alert {
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver1\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://demo.automationtesting.in/Alerts.html");
 		driver.manage().window().maximize();
@@ -35,10 +36,8 @@ public class Day7_Alert {
 		//prompt alert
 		WebElement s4 = driver.findElement(By.xpath("(//a[@class='analystic'])[3]"));                      //first selection
 		s4.click();	
-		
 		Thread.sleep(2000);
 		WebElement s5 = driver.findElement(By.xpath("//button[@class='btn btn-info']"));                   //second slection
-		
 		Thread.sleep(2000);
 		s5.click();
 		
@@ -50,7 +49,7 @@ public class Day7_Alert {
 		Thread.sleep(2000);
 		driver.switchTo().alert().sendKeys("dhanush prompt alert box program");
 		
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		driver.switchTo().alert().accept();
 			
 		

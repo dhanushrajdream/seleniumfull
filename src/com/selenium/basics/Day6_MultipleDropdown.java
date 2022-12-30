@@ -1,7 +1,6 @@
 package com.selenium.basics;
 
-import java.util.List;
-
+import java.util.List; 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,12 +11,9 @@ public class Day6_MultipleDropdown {
 	
 	public static void main(String[] args) throws InterruptedException {
 		
-		
 		System.setProperty("webdriver.chrome.driver", 
-				"C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver1\\chromedriver.exe" );
-		
+				"C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver\\chromedriver.exe" );
 		WebDriver  driver = new ChromeDriver();
-		
 		driver.get("http://www.leafground.com/pages/Dropdown.html");
 		driver.manage().window().maximize();
 		
@@ -30,7 +26,6 @@ public class Day6_MultipleDropdown {
 		System.out.println(m);
 		
 		Thread.sleep(2000);
-		
 		s.selectByValue("3");                                               //selecting maultiple value in single select
 		s.selectByIndex(2);
 		s.selectByVisibleText("Loadrunner");

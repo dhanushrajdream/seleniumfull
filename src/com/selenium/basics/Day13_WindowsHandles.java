@@ -1,11 +1,9 @@
 package com.selenium.basics;
 
-import java.awt.AWTException;
+import java.awt.AWTException; 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,7 +14,7 @@ public class Day13_WindowsHandles {
 	
 	public static void main(String[] args) throws InterruptedException, AWTException {
 		
-		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver1\\chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver\\chromedriver.exe");
 			
 	     WebDriver driver = new ChromeDriver();
 			

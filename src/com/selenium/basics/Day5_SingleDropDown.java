@@ -1,20 +1,18 @@
 package com.selenium.basics;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.By; 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+//Select d = new Select(day);  1.selectByValue,2.selectByVisibleText,3.selectByIndex
 
 public class Day5_SingleDropDown {
-	
 	public static void main(String[] args) throws InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver\\chromedriver.exe");
-		
 		WebDriver driver = new ChromeDriver();
-		
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 			
@@ -43,7 +41,7 @@ public class Day5_SingleDropDown {
 		WebElement day = driver.findElement(By.id("day"));                               //day in dob
 		
 		Select d = new Select(day);                                                      //new syntax for select method
-		d.selectByValue("31");
+		d.selectByIndex(4);
 		
 		//month
 		Thread.sleep(2000);                                                              //month in dob
@@ -51,6 +49,7 @@ public class Day5_SingleDropDown {
 		
 		Select m = new Select(month);
 		m.selectByVisibleText("Jan");
+		
 		
 		//year
 		Thread.sleep(2000);                                                                //year
