@@ -19,6 +19,9 @@ public class Day15_Absolutexpath {
 		 Thread.sleep(2000);
 		 WebElement email = driver.findElement(By.xpath("/html/body/div/section/main/article/div[2]/div/div/form/div/div[1]/div/label/input"));
 		 email.sendKeys("cognizant interview");
+		 
+		 //login fuction
+		 //html/body/div[2]/div/div/div/div[1]/div/div/div/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[4]
 	}
 
 }

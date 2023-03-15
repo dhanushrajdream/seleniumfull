@@ -33,9 +33,9 @@ public class Day15_Wait {
 		// Declare and initialise a fluent wait
 		FluentWait fwait = new FluentWait(driver);
 		// Specify the timout of the wait
-		fwait.withTimeout(5000, TimeUnit.MILLISECONDS);
+		fwait.withTimeout(5000, TimeUnit.SECONDS);
 		// Sepcify polling time
-		fwait.pollingEvery(250, TimeUnit.MILLISECONDS);
+		fwait.pollingEvery(3, TimeUnit.SECONDS);
 		// Specify what exceptions to ignore
 		fwait.ignoring(NoSuchElementException.class);
 		// This is how we specify the condition to wait on.

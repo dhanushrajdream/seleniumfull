@@ -14,14 +14,10 @@ public class Day13_WindowsHandles {
 	
 	public static void main(String[] args) throws InterruptedException, AWTException {
 		
-		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver\\chromedriver.exe");
-			
+		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\d5raj\\eclipse-workspace\\Sele_8Pm\\Driver\\chromedriver.exe");
 	     WebDriver driver = new ChromeDriver();
-			
 		 driver.get("https://www.amazon.in/");
 		 driver.manage().window().maximize();
-		 
-		
 		 
 		 //new tab best sellers	
 		 Thread.sleep(2000);

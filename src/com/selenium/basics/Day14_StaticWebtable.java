@@ -12,12 +12,11 @@ public class Day14_StaticWebtable {
 
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver\\chromedriver.exe");
-
 		WebDriver driver = new ChromeDriver();
-
 		driver.get("http://leafground.com/pages/table.html");
 		driver.manage().window().maximize();
 
+		
 		Thread.sleep(2000);//all data
 		System.out.println("========all data=======");
 		List<WebElement> alldata = driver.findElements(By.xpath("(//table[@id='table_id'])/tbody/tr/td")); // finding

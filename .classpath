@@ -6,11 +6,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/selenium drivers never delete or move/selenium-server-standalone-3.141.59.jar"/>
-	<classpathentry kind="lib" path="C:/selenium drivers never delete or move/screenshot extract file/commons-io-2.11.0/commons-io-2.11.0.jar"/>
-	<classpathentry kind="lib" path="C:/selenium drivers never delete or move/screenshot extract file/commons-io-2.11.0/commons-io-2.11.0-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/selenium drivers never delete or move/screenshot extract file/commons-io-2.11.0/commons-io-2.11.0-sources.jar"/>
-	<classpathentry kind="lib" path="C:/selenium drivers never delete or move/screenshot extract file/commons-io-2.11.0/commons-io-2.11.0-tests.jar"/>
-	<classpathentry kind="lib" path="C:/selenium drivers never delete or move/screenshot extract file/commons-io-2.11.0/commons-io-2.11.0-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/selenium patch/commons-io-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium patch/commons-io-2.11.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/selenium patch/commons-io-2.11.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/selenium patch/commons-io-2.11.0-tests.jar"/>
+	<classpathentry kind="lib" path="C:/selenium patch/commons-io-2.11.0-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/selenium patch/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

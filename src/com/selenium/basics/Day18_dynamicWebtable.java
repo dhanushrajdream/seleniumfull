@@ -12,7 +12,7 @@ public class Day18_dynamicWebtable {
 	
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\d5raj\\eclipse-workspace\\Sele_8Pm\\Driver\\chromedriver.exe");
 		//System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		
 	     WebDriver driver = new ChromeDriver();

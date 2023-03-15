@@ -13,7 +13,7 @@ public class Day12_Keyboardactions {
 	
 	public static void main(String[] args) throws InterruptedException, AWTException {
 		
-		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver1\\chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\d5raj\\eclipse-workspace\\Sele_8Pm\\Driver\\chromedriver.exe");
 			
 	     WebDriver driver = new ChromeDriver();
 		 driver.get("https://www.google.com/");
@@ -26,20 +26,25 @@ public class Day12_Keyboardactions {
 		 
 		 ac.contextClick(gmail).build().perform();
 		 
+		 
 		 Robot rob =new Robot();
 		 
-		 rob.keyPress(KeyEvent.VK_DOWN);
-		 rob.keyRelease(KeyEvent.VK_DOWN);
-		 
-		 
-		 rob.keyPress(KeyEvent.VK_DOWN);
-		 rob.keyRelease(KeyEvent.VK_DOWN);
 		 
 		 rob.keyPress(KeyEvent.VK_DOWN);
 		 rob.keyRelease(KeyEvent.VK_DOWN);
 		 
 		 Thread.sleep(2000);
+		 rob.keyPress(KeyEvent.VK_DOWN);
+		 rob.keyRelease(KeyEvent.VK_DOWN);
+		 
+		 Thread.sleep(2000);
+		 rob.keyPress(KeyEvent.VK_DOWN);
+		 rob.keyRelease(KeyEvent.VK_DOWN);
+		 
+		 Thread.sleep(2000);
 		 rob.keyPress(KeyEvent.VK_ENTER);
+		 
+		 
 		 
 		 
 		 

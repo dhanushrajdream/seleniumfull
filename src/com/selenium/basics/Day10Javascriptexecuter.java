@@ -10,7 +10,7 @@ public class Day10Javascriptexecuter {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Sele_8Pm\\Driver1\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\d5raj\\eclipse-workspace\\Sele_8Pm\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.amazon.in/");
@@ -25,28 +25,25 @@ public class Day10Javascriptexecuter {
 		
 		//scroll into view in javascript
 		Thread.sleep(5000); 
-		WebElement book = driver.findElement(By.xpath("//span[text()='Best Sellers in Books']"));                       //to move to another image
-		js.executeScript("arguments[0].scrollIntoView();", book);
+		WebElement sell = driver.findElement(By.xpath("//a[text()='Sell']"));                       //to move to another image
+		js.executeScript("arguments[0].scrollIntoView();", sell);
+		
 		
 		//scroll with xy axis in javascript
 		Thread.sleep(5000);
-		js.executeScript("window.scrollBy(0,2000);");
+		js.executeScript("window.scrollBy(0,-5000);");
 		
 		Thread.sleep(5000);
-		js.executeScript("window.scrollBy(0,5000);");
+		js.executeScript("window.scrollBy(0,2000);");
 		
 		//click function in javascript
 		Thread.sleep(5000);
-		js.executeScript("arguments[0].click();" ,book);                                  
+		js.executeScript("arguments[0].click();" ,sell);                                  
 		
 		
-	
+		Thread.sleep(5000);
 		
 		
-		
-		
-		
-		Thread.sleep(10000);
 		driver.close();
 	}
 }
